@@ -1,95 +1,70 @@
-import Image from "next/image";
+"use client"
+import React from "react";
+import styled from "styled-components";
 import styles from "./page.module.css";
+
+const StyledDiv = styled.div`
+  background-image: url("praia-dia.jpg");
+  height: 372px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <main>
+        <div>
+          <StyledDiv>
+            <h1 className={styles.titulo}>Diário de Viagens</h1>
+          </StyledDiv>
+          <section className={styles.texto}>
+            <h2 className={styles.subtitulo}>Explorando o mundo!</h2>
+            <p>Seja bem-vindo ao <strong>Diário de Viagens</strong>, o lugar onde
+                cada história é um convite para você desbravar novos horizontes.
+                Aqui, compartilho experiências reais, dicas práticas e tudo que
+                você precisa saber para transformar sua próxima viagem em uma
+                aventura inesquecível.
+              </p>
+            <p>
+              Compartilharei dicas de como se organizar para realizar suas tão sonhadas viagens,
+              indicarei destinos, hóteis e muito mais.
+              Também poderá encontar aqui informações que não estão disponíveis em outros sites e
+              que apenas descobri vivenciando certas dificuldades na prática.
+            </p>
+            <h2 className={styles.subtitulo}>O Que Você Vai Encontrar Aqui</h2>
+              <ul className={styles.lista}>
+                <li>
+                  <strong>Dicas Valiosas:</strong> Conselhos de como se organizar,
+                  desde o planejamento até o retorno.
+                </li>
+                <li>
+                  <strong>Destinos Inspiradores:</strong> Sugestões de lugares
+                  incríveis para explorar.
+                </li>
+                <li>
+                  <strong>Soluções Práticas:</strong> Truques para lidar com
+                  imprevistos que só quem já viajou sabe.
+                </li>
+              </ul>
+              <p>
+                Não importa se você está planejando sua primeira viagem ou se já é
+                um viajante experiente, o <strong>Diário de Viagens</strong> está
+                aqui para te guiar, inspirar e preparar para cada passo da
+                jornada.
+              </p>
+              <p>
+                Então, prepare suas malas e embarque nessa jornada comigo.
+                Descubra dicas exclusivas, histórias emocionantes e muito mais!
+              </p>
+          </section>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
+   
   );
 }

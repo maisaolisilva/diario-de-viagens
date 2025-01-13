@@ -12,7 +12,7 @@
 
 @media (max-width: 500px) {
     .titulo {
-        font-size: 26px;
-        padding: 5px;
+        font-size: 26px !important;
+        padding: 5px !important;
     }
 }

@@ -63,6 +63,7 @@ export default function Viagem() {
                     <br />
                     <p className={styles.pergunta}>Há algo que faria diferente se voltasse ao Chile?</p>
                     <p>Sim, alugaria um carro para conhecer o litoral e ficaria mais dias no parque Farellones, caso fosse no inverno.</p>
+                    <br />
                 </section>
             </div>
         </main>

@@ -12,12 +12,17 @@ const StyledCard = styled.div<{ $url: string }>`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 500px) {
+        max-height: 300px;
+    }
 `
 interface CardProps {
     titulo: string;
     url: string;
 }
 export default function Card( {titulo, url}: CardProps ) {
+
     return(
         <StyledCard $url={url}>
             <h1 className={styles.titulo}>{ titulo }</h1>

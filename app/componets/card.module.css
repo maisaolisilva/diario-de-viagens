@@ -9,3 +9,9 @@
     text-align: center;
     padding: 10px;
 }
+
+@media (max-width: 500px) {
+    .titulo {
+        font-size: 50px;
+    }
+}

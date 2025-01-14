@@ -1,12 +1,17 @@
 "use client";
 
 import styles from "./menu.module.css";
-import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Menu() {
+  const [pathname, setPathname] = useState("");
 
-  //hook para não gerar erros nos caminhos dos links do menu em ambiente de produção
-  const pathname = usePathname();
+  //garante que o código que acessa o document seja acessado apenas ao lado do cliente já que document não é disponível do lado do servidor
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setPathname(window.location.pathname);
+    }
+  }, []);
 
   return (
     <div className="dropdown">

@@ -2,26 +2,16 @@
 import React from "react";
 import styled from "styled-components";
 import styles from "./page.module.css";
+import Card from "./componets/Card";
 
-const StyledDiv = styled.div`
-  background-image: url("praia-dia.jpg");
-  height: 372px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
+
 
 export default function Home() {
   return (
     <>
       <main>
         <div>
-          <StyledDiv>
-            <h1 className={styles.titulo}>Diário de Viagens</h1>
-          </StyledDiv>
+          <Card titulo="Diário de Viagens" url="praia-dia.jpg" />
           <section className={styles.texto}>
             <h2 className={styles.subtitulo}>Explorando o mundo!</h2>
             <p>Seja bem-vindo ao <strong>Diário de Viagens</strong>, o lugar onde

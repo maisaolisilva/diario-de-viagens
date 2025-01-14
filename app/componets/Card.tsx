@@ -13,7 +13,7 @@ const StyledCard = styled.div<{ $url: string }>`
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 500px) {
+    @media screen and (max-width: 500px) {
         max-height: 300px;
     }
 `

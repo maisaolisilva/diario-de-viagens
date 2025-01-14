@@ -10,9 +10,9 @@
     padding: 10px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .titulo {
-        font-size: 35px !important;
-        padding: 5px !important;
+        font-size: 40px;
+        padding: 5px;
     }
 }

@@ -1,10 +1,7 @@
-"use client";
-
 import styles from "./menu.module.css";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
-const NavigationMenu = () => (
+const NavigationMenu = ({}) => (
   <div className="dropdown">
     <button className={styles.botao} type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Minhas Viagens
@@ -18,15 +15,7 @@ const NavigationMenu = () => (
 );
 
 export default function Menu() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    return null; // Retorna null durante a renderização do servidor
-  }
+  if (!process.browser) return null; // Only render on client-side
 
   return <NavigationMenu />;
 }

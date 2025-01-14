@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
 
+.conteudo {
+    background: #2e4a56;
+}
+
 .titulo {
     font-family: "Playwrite AU SA", serif;
     color: #FFF;
@@ -8,6 +12,10 @@
     width: 100%;
     text-align: center;
     padding: 10px;
+}
+
+.menu{
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 500px) {

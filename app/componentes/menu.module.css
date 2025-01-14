@@ -1,0 +1,13 @@
+.botao{
+    background-color: transparent;
+    border: none;
+    font-family: "EB Garamond", serif;
+    color: #FBF8EF;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.botao:hover {
+    color: black;
+    text-decoration: underline black;
+}

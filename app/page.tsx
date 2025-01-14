@@ -1,8 +1,7 @@
 "use client"
 import React from "react";
-import styled from "styled-components";
 import styles from "./page.module.css";
-import Card from "./componets/Card";
+import Card from "./componentes/Card";
 
 
 

@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 import styles from "./card.module.css";
-import Menu from "./Menu";
+import Dropdown from "./Menu";
 
 
 const StyledCard = styled.div<{ $url: string }>`
@@ -30,7 +30,7 @@ export default function Card( {titulo, url}: CardProps ) {
     return(
         <div className={styles.conteudo}>
             <div className={styles.menu}>
-                <Menu />
+                <Dropdown />
             </div>
             <StyledCard $url={url}>
                 <h1 className={styles.titulo}>{ titulo }</h1>

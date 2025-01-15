@@ -10,23 +10,46 @@
 .botao:hover {
     color: black;
     text-decoration: underline black;
+    cursor: pointer;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    background: #FBF8EF;
+    width: 10%;
 }
 
 .item {
     border-bottom: solid 2px #78B3CE;
-    padding: 5px;
-}
-
-.item:hover {
-    opacity: 0.5;
-}
-
-.item a {
-    text-decoration: none;
+    padding: 5px 10px;
     color: #2e4a56;
     font-size: 20px;
 }
 
-.item a:hover {
+.item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.item:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .lista{
+        width: 15%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .lista{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lista {
+        width: 30%;
+    }
 }

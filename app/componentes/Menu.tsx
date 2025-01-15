@@ -1,16 +1,9 @@
-
-import styles from "./menu.module.css";
-import { useEffect, useState } from "react";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import styles from './menu.module.css';
 
 export default function Menu() {
-  const [pathname, setPathname] = useState("");
-
-  //garante que o código que acessa o document seja acessado apenas ao lado do cliente já que document não é disponível do lado do servidor
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setPathname(window.location.pathname);
-    }
-  }, []);
+  const router = useRouter();
 
   return (
     <div className="dropdown">
@@ -18,9 +11,15 @@ export default function Menu() {
         Minhas Viagens
       </button>
       <ul className="dropdown-menu">
-        <li><a className="dropdown-item" href={pathname === "/" ? "#" : "/"}>Home</a></li>
-        <li><a className="dropdown-item" href={pathname === "/viagens/santiago" ? "#" : "/viagens/santiago"}>Santiago</a></li>
-        <li><a className="dropdown-item" href={pathname === "/viagens/macae" ? "#" : "/viagens/macae"}>Macaé</a></li>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/viagens/santiago">Santiago</Link>
+        </li>
+        <li>
+          <Link href="/viagens/macae">Macaé</Link>
+        </li>
       </ul>
     </div>
   );

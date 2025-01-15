@@ -1,14 +1,25 @@
+'use client';
+
 import Link from 'next/link';
 import styles from './menu.module.css';
 
 export default function Menu() {
+  // Verificação para garantir execução no cliente
+  if (typeof window === 'undefined') {
+    return null;
+  }
 
   return (
     <div className="dropdown">
-      <button className={styles.botao} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <button
+        className={styles.botao}
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
         Minhas Viagens
       </button>
-      <ul className="dropdown-menu menu" >
+      <ul className="dropdown-menu menu">
         <li className={styles.item}>
           <Link href="/">Home</Link>
         </li>

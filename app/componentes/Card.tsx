@@ -3,9 +3,6 @@
 import styled from "styled-components";
 import styles from "./card.module.css";
 import Menu from "./Menu";
-import 'bootstrap/dist/css/bootstrap.min.css'; // CSS do bootstrap
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // JS do bootstrap
-
 
 
 const StyledCard = styled.div<{ $url: string }>`

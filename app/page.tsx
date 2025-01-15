@@ -3,8 +3,6 @@ import React from "react";
 import styles from "./page.module.css";
 import Card from "./componentes/Card";
 
-
-
 export default function Home() {
   return (
     <>

@@ -16,7 +16,7 @@ export default function Dropdown() {
           <Link className={styles.item} href="/viagens/santiago">Chile</Link>
         </MenuItem>
         <MenuItem>
-          <Link className={styles.item} href="/viagens/macae">Macae</Link>
+          <Link className={styles.item} href="/viagens/macae">Macaé</Link>
         </MenuItem>
       </MenuItems>
     </Menu>

@@ -21,7 +21,7 @@ export default function Dropdown() {
           </MenuItem>
         </MenuItems>
       </Menu>
-      <Link href="/comoTudoComecou" className={styles.botao}>Como Tudo Começou</Link>
+      <Link href="/comoTudoComecou" className={styles.botao}>Início da Jornada</Link>
     </header>
   );
 }

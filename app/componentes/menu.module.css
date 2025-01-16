@@ -1,3 +1,9 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    background: #78B3CE;
+}
+
 .botao{
     background-color: transparent;
     border: none;
@@ -5,6 +11,7 @@
     color: #FBF8EF;
     font-size: 24px;
     text-decoration: underline;
+    margin: 10px;
 }
 
 .botao:hover {
@@ -36,6 +43,8 @@
 .item:hover {
     text-decoration: underline;
 }
+
+
 
 @media screen and (max-width: 900px) {
     .lista{

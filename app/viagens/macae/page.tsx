@@ -1,7 +1,7 @@
 "use client";
 
 import Card from "@/app/componentes/Card";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
 
 export default function Viagem() {
     return (

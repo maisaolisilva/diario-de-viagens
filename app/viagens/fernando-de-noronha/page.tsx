@@ -2,6 +2,7 @@
 
 import Card from '@/app/componentes/Card';
 import styles from '../page.module.css';
+import Link from 'next/link';
 
 export default function Viagem() {
   return (
@@ -55,6 +56,16 @@ export default function Viagem() {
           <p>
             Garanta que todas as taxas necessárias sejam pagas antes da viagem, para evitar contratempos ao chegar. A receptividade do povo local e a beleza natural tornam a experiência inesquecível, mas é importante planejar bem o orçamento devido aos valores elevados.
           </p>
+        </section>
+        <br />
+        <section>
+          <h3 className={styles.subtitulo}>Diário de fotos</h3>
+          <p className={styles.pergunta}>Gostaria de conferir outras fotos tiradas nessa viagem?</p>
+          <br />
+          <Link href={{
+          pathname: '/diarioDeFotos/fernando-de-noronha',
+          query: { nome: encodeURIComponent('Fernando de Noronha') },
+        }} className={styles.link}>Diário de fotos</Link>
         </section>
       </div>
     </main>

@@ -39,7 +39,8 @@ export default function Diario() {
 
   return (
     <main className={styles.diario}>
-      <h1 className={styles.titulo}>Diário de Fotos - {nomeViagem}</h1>
+      <h1 className={styles.titulo}>Diário de Fotos</h1>
+      <h2>{nomeViagem}</h2>
       <div className={styles.galeria}>
         {imagens.map((img) => (
           <div key={img.id} className={styles.imagem}>

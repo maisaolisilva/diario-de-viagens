@@ -3,22 +3,47 @@
     padding: 20px;
   }
   
-  .titulo {
-    font-size: 24px;
-    font-family: "Playwrite AU SA", serif;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+.titulo, .subtitulo {
+  font-size: 26px;
+  font-family: "Playwrite AU SA", serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
   
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
   
-  .imagem img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+.imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagem img:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay para imagem expandida */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.imagemExpandida {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}

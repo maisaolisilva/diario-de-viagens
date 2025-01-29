@@ -60,7 +60,7 @@ export default function Viagem() {
         <br />
         <section>
           <h3 className={styles.subtitulo}>Diário de fotos</h3>
-          <p className={styles.pergunta}>Gostaria de conferir outras fotos tiradas nessa viagem?</p>
+          <p className={styles.pergunta}>Gostaria de conferir outras fotos tiradas nessa viagem? Confira no link a seguir:</p>
           <br />
           <Link href={{
           pathname: '/diarioDeFotos/fernando-de-noronha',

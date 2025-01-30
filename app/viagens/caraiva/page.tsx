@@ -2,6 +2,7 @@
 
 import Card from '@/app/componentes/Card';
 import styles from '../page.module.css';
+import Link from 'next/link';
 
 export default function Viagem() {
   return (
@@ -45,6 +46,15 @@ export default function Viagem() {
           <p>
             Todas as ruas de Caraíva são de areia, o que dá ao local um charme único e um clima aconchegante. É um convite para relaxar e caminhar sem pressa.
           </p>
+        </section>
+        <section>
+          <h3 className={styles.subtitulo}>Diário de fotos</h3>
+          <p className={styles.pergunta}>Gostaria de conferir outras fotos tiradas nessa viagem? Confira no link a seguir:</p>
+          <br />
+          <Link href={{
+          pathname: '/diarioDeFotos/caraiva',
+          query: { nome: encodeURIComponent('Caraíva') },
+        }} className={styles.link}>Diário de fotos</Link>
         </section>
       </div>
     </main>

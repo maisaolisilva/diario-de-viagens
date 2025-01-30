@@ -25,6 +25,12 @@ export default function Dropdown() {
           <MenuItem>
             <Link className={styles.item} href="/viagens/fernando-de-noronha">Fernado de Noronha</Link>
           </MenuItem>
+          <MenuItem>
+            <Link className={styles.item} href="/viagens/rio-preguica">Rio Preguiça</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link className={styles.item} href="/viagens/atins">Atins</Link>
+          </MenuItem>
         </MenuItems>
       </Menu>
       <Link href="/comoTudoComecou" className={styles.botao}>Início da Jornada</Link>

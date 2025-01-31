@@ -26,8 +26,6 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489210929203210"
-     crossOrigin="anonymous"></script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

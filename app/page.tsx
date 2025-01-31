@@ -2,11 +2,14 @@
 import React from "react";
 import styles from "./page.module.css";
 import Card from "./componentes/Card";
+import Script from 'next/script';
 
 export default function Home() {
   return (
     <>
       <main>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489210929203210"
+     crossOrigin="anonymous"></Script>
         <div>
           <Card titulo="Diário de Viagens" url="praia-dia.jpg" />
           <section className={styles.texto}>

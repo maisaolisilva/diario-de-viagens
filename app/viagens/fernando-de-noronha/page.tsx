@@ -3,10 +3,13 @@
 import Card from '@/app/componentes/Card';
 import styles from '../page.module.css';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export default function Viagem() {
   return (
     <main>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489210929203210"
+     crossOrigin="anonymous"></Script>
       <Card titulo="Fernando de Noronha, PE" url="/fernando-de-noronha.jpg" />
       <div className={styles.texto}>
         <h2 className={styles.titulo}>Explorando Fernando de Noronha: Abril de 2021</h2>

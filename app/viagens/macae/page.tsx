@@ -3,6 +3,7 @@
 import Card from "@/app/componentes/Card";
 import styles from "../page.module.css";
 import Script from 'next/script';
+import Link from "next/link";
 
 export default function Viagem() {
     return (
@@ -49,6 +50,21 @@ export default function Viagem() {
                     <p className={styles.pergunta}>Qual é a melhor época do ano para visitar Macaé?</p>
                     <p>Visitei Macaé no final de novembro, no dia que cheguei estava chovendo. Mas teve dias de sol também, o que me permitiu aproveitar bastante o lugar.</p>
                     <br />
+                </section>
+                <br />
+                <section>
+                    <h3 className={styles.subtitulo}>Diário de fotos</h3>
+                    <p className={styles.pergunta}>Quer ver mais fotos dessa viagem? Confira no link abaixo:</p>
+                    <br />
+                    <Link
+                        href={{
+                        pathname: '/diarioDeFotos/macae',
+                        query: { nome: 'Macaé' },
+                        }}
+                        className={styles.link}
+                    >
+                        Diário de fotos
+                    </Link>
                 </section>
             </div>
         </main>

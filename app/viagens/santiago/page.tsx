@@ -3,6 +3,7 @@
 import Card from "@/app/componentes/Card";
 import styles from "../page.module.css";
 import Script from 'next/script';
+import Link from "next/link";
 
 export default function Viagem() {
     return (
@@ -67,6 +68,21 @@ export default function Viagem() {
                     <p className={styles.pergunta}>Há algo que faria diferente se voltasse ao Chile?</p>
                     <p>Sim, alugaria um carro para conhecer o litoral e ficaria mais dias no parque Farellones, caso fosse no inverno.</p>
                     <br />
+                </section>
+                <br />
+                <section>
+                    <h3 className={styles.subtitulo}>Diário de fotos</h3>
+                    <p className={styles.pergunta}>Quer ver mais fotos dessa viagem? Confira no link abaixo:</p>
+                    <br />
+                    <Link
+                        href={{
+                        pathname: '/diarioDeFotos/chile',
+                        query: { nome: 'Santiago, Chile' },
+                        }}
+                        className={styles.link}
+                    >
+                        Diário de fotos
+                    </Link>
                 </section>
             </div>
         </main>

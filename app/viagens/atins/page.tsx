@@ -1,15 +1,20 @@
 'use client';
 
+import Script from 'next/script'; // Script para Google AdSense
 import Card from '@/app/componentes/Card';
 import styles from '../page.module.css';
 import Link from 'next/link';
-import Script from 'next/script';
 
 export default function Viagem() {
   return (
     <main>
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489210929203210"
-     crossOrigin="anonymous"></Script>
+      <Script
+        async
+        strategy="afterInteractive"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489210929203210"
+        crossOrigin="anonymous"
+      />
+
       <Card titulo="Atins, MA" url="/atins.jpg" />
       <div className={styles.texto}>
         <h2 className={styles.titulo}>Explorando Atins, MA: Maio de 2023</h2>
@@ -21,14 +26,14 @@ export default function Viagem() {
 
         <section>
           <h3 className={styles.subtitulo}>Planejamento</h3>
-          <p className={styles.pergunta}>Como chegar a Atins?</p>
+          <p className={styles.pergunta}>Qual é a melhor forma de chegar a Atins?</p>
           <p>
-            O trajeto para Atins já é uma experiência única. O acesso pode ser feito de barco ou por estradas de areia, tornando a viagem uma verdadeira aventura. A melhor opção é verificar as condições climáticas antes de ir.
+            A melhor maneira de chegar é com guias locais em carros 4x4, garantindo um trajeto mais seguro e confortável.
           </p>
           <br />
-          <p className={styles.pergunta}>É necessário ir com guias locais?</p>
+          <p className={styles.pergunta}>O trajeto é tranquilo ou tem desafios?</p>
           <p>
-            Sim! Para aproveitar ao máximo a região e evitar contratempos, a melhor escolha é contratar guias locais. Eles conhecem os melhores caminhos e pontos turísticos.
+            A viagem até Atins é cheia de desafios, com terrenos arenosos e travessias que tornam a experiência ainda mais emocionante.
           </p>
         </section>
         <br />
@@ -37,24 +42,33 @@ export default function Viagem() {
           <h3 className={styles.subtitulo}>Atrações</h3>
           <p className={styles.pergunta}>Vale a pena fazer o passeio de quadriciclo?</p>
           <p>
-            Se você gosta de aventura, esse passeio é imperdível! O roteiro dura o dia todo e passa por rios, lagoas, dunas e a famosa Cachoeirinha. A experiência inclui momentos de sol, chuva e um pôr do sol mágico.
+            Sim! Esse passeio é imperdível para quem gosta de aventura. Entre os momentos mais emocionantes estão: pegar chuva durante o trajeto, atravessar rios e até rampas nas dunas.
           </p>
           <br />
-          <p className={styles.pergunta}>O que esperar das paisagens?</p>
+          <p className={styles.pergunta}>Quais outras atividades além do quadriciclo são imperdíveis?</p>
           <p>
-            Atins é um lugar mágico e cheio de beleza natural. As dunas de areia, lagoas e rios formam um cenário impressionante, tornando cada momento especial.
+            Além do quadriciclo, os passeios de 4x4 são uma ótima forma de explorar a região. 
           </p>
+          <br />
         </section>
         <br />
 
         <section>
           <h3 className={styles.subtitulo}>Dicas e Observações</h3>
-          <br />
-          <p className={styles.pergunta}>Contato dos melhores guias</p>
+          <p className={styles.pergunta}>Tem comida típica que vale a pena experimentar?</p>
           <p>
-            Abaixo, você encontrará os contatos dos guias mais recomendados para o passeio de quadriciclo:
+            Não experimentei nada muito diferente, mas os pratos à base de peixe e camarão são muito saborosos e uma ótima escolha na região.
           </p>
-          <p><a href="https://www.instagram.com/luistouratins?igsh=MXA0NGxibGl5MXFlOQ==" className={styles.link}>Contato</a></p>
+          <br />
+          <p className={styles.pergunta}>Os passeios são indicados para todas as idades?</p>
+          <p>
+            Sim, desde que o transporte seja feito em carros 4x4, garantindo conforto e segurança para todos.
+          </p>
+          <br />
+          <p className={styles.pergunta}>Qual foi o maior perrengue ou desafio da viagem?</p>
+          <p>
+            O maior perrengue foi chegar na pousada e descobrir que a piscina estava interditada e suja. Além disso, os quartos não tinham TV (o que não foi um grande problema), e a água da pousada era escura e com mau cheiro.
+          </p>
         </section>
         <br />
 

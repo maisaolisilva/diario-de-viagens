@@ -2,14 +2,13 @@
 
 import Card from "@/app/componentes/Card";
 import styles from "../page.module.css";
-import Script from 'next/script';
 import Link from "next/link";
+import AdSense from "@/app/componentes/AdSense";
 
 export default function Viagem() {
     return (
         <main>
-            <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489210929203210"
-     crossOrigin="anonymous"></Script>
+            <AdSense />
             <Card titulo="Macaé, RJ" url="/macae.jpg" />
             <div className={styles.texto}>
                 <h2 className={styles.titulo}>Explorando Macaé, RJ: Novembro de 2024</h2>

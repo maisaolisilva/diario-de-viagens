@@ -1,21 +1,14 @@
 'use client';
 
-import Script from 'next/script'; // Script para Google AdSense
 import Card from '@/app/componentes/Card';
 import styles from '../page.module.css';
 import Link from 'next/link';
+import AdSense from '@/app/componentes/AdSense';
 
 export default function Viagem() {
   return (
     <main>
-      {/* Script do Google AdSense */}
-      <Script
-        async
-        strategy="afterInteractive"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489210929203210"
-        crossOrigin="anonymous"
-      />
-
+      <AdSense />
       <Card titulo="Rio Preguiça / Barreirinhas, MA" url="/rio-preguica.jpg" />
       <div className={styles.texto}>
         <h2 className={styles.titulo}>Explorando Rio Preguiça e Barreirinhas: Maio de 2023</h2>

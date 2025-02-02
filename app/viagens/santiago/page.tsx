@@ -2,7 +2,6 @@
 
 import Card from "@/app/componentes/Card";
 import styles from "../page.module.css";
-import Script from 'next/script';
 import Link from "next/link";
 import AdSense from "@/app/componentes/AdSense";
 

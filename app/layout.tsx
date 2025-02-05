@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <AdSense pId="3489210929203210" />
+        <AdSense />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

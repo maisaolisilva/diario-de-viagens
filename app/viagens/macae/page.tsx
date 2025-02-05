@@ -8,7 +8,6 @@ import AdSense from "@/app/componentes/AdSense";
 export default function Viagem() {
     return (
         <main>
-            <AdSense />
             <Card titulo="Macaé, RJ" url="/macae.jpg" />
             <div className={styles.texto}>
                 <h2 className={styles.titulo}>Explorando Macaé, RJ: Novembro de 2024</h2>

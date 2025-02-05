@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <main>
-        <AdSense />
         <div>
           <Card titulo="Diário de Viagens" url="praia-dia.jpg" />
           <section className={styles.texto}>

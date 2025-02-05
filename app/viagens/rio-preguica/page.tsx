@@ -8,7 +8,6 @@ import AdSense from '@/app/componentes/AdSense';
 export default function Viagem() {
   return (
     <main>
-      <AdSense />
       <Card titulo="Rio Preguiça / Barreirinhas, MA" url="/rio-preguica.jpg" />
       <div className={styles.texto}>
         <h2 className={styles.titulo}>Explorando Rio Preguiça e Barreirinhas: Maio de 2023</h2>

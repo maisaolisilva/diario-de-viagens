@@ -8,7 +8,6 @@ import AdSense from '@/app/componentes/AdSense';
 export default function Viagem() {
   return (
     <main>
-      <AdSense />
       <Card titulo="Fernando de Noronha, PE" url="/fernando-de-noronha.jpg" />
       <div className={styles.texto}>
         <h2 className={styles.titulo}>Explorando Fernando de Noronha: Abril de 2021</h2>

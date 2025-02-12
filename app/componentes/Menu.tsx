@@ -31,6 +31,9 @@ export default function Dropdown() {
           <MenuItem>
             <Link className={styles.item} href="/viagens/atins">Atins</Link>
           </MenuItem>
+          <MenuItem>
+            <Link className={styles.item} href="/viagens/ilha-grande">Ilha Grande</Link>
+          </MenuItem>
         </MenuItems>
       </Menu>
       <Link href="/comoTudoComecou" className={styles.botao}>Início da Jornada</Link>

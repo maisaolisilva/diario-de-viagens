@@ -58,7 +58,7 @@ export default function Viagem() {
           <br />
           <p className={styles.pergunta}>Cachoeira da Santa Clara</p>
           <p>
-            Boa opção para famílias com crianças. O acesso é por uma escada, mas o estacionamento é limitado.
+            É uma boa opção para famílias com crianças. O acesso é por uma escada, mas o estacionamento é limitado.
           </p>
           <br />
           <p className={styles.pergunta}>Cachoeira dos Macacos e Santuário</p>

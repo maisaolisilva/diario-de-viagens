@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import AdSense from "./componentes/AdSense";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +26,6 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <AdSense />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

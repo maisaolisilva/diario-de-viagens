@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "./page.module.css";
 import Card from "./componentes/Card";
-import AdSense from "./componentes/AdSense";
 
 export default function Home() {
   return (

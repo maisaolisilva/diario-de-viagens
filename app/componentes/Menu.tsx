@@ -40,6 +40,7 @@ export default function Dropdown() {
         </MenuItems>
       </Menu>
       <Link href="/comoTudoComecou" className={styles.botao}>Início da Jornada</Link>
+      <Link href="/planoDeHospedagem" className={styles.botao}>Plano de Hospedagem</Link>
     </header>
   );
 }

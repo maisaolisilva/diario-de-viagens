@@ -1,0 +1,47 @@
+.page {
+  margin: 5px 20px 10px 20px;
+}
+
+.divBotao {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}   
+
+.botao {
+  padding: 10px;
+  font-size: 24px;
+  width: 50%;
+  background: rgba(120, 179, 206);
+  border-radius: 20px;
+  border: solid 2px #000000;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.ref_site, .ref_termo {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.ref_site:hover, .ref_termo:hover {
+  opacity: 0.7;
+}
+
+.checkbox {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .card{
+    max-height: 300px;
+  }
+  .titulo {
+    font-size: 40px;
+  }      
+}

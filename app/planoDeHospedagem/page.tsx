@@ -42,7 +42,11 @@ export default function Home() {
           <li>Caso deseje transferir a titularidade da assinatura, entre em contato pelo WhatsApp ou e-mail;</li>
           <li>Para datas em alta temporada (junho, julho, dezembro, janeiro e feriados), haverá um acréscimo de 18% sobre o valor total do plano por diária;</li>
           <li>As diárias não são cumulativas e deverão ser utilizadas dentro de 12 meses a partir do 8º dia de assinatura;</li>
-          <li>O acréscimo será pago no check-in, via Pix ou transferência bancária. Pagamentos via cartão de crédito estarão sujeitos a taxas adicionais.</li>
+          <li>O acréscimo será pago no check-in, via Pix ou transferência bancária. Pagamentos via cartão de crédito estarão sujeitos a taxas adicionais;</li>
+          <li>A assinatura é mensal, com compromisso contratual de 12 meses e renovação automática ao final de cada ciclo anual;</li>
+  <li>O cliente receberá um e-mail antes da renovação, informando que um novo ciclo irá se iniciar;</li>
+  <li>Se não desejar renovar, o cliente deverá solicitar o cancelamento em até 7 dias após o pagamento da primeira parcela do novo ciclo;</li>
+  <li>Todos os pedidos de cancelamento devem ser feitos exclusivamente via e-mail (diariodeviagens.inf@gmail.com) ou WhatsApp (24) 99832-6422.</li>
         </ul>
 
         <h2>Configuração do Quarto</h2>

@@ -88,7 +88,7 @@ export default function Home() {
               <li>Café da manhã ou qualquer outra refeição;</li>
               <li>Serviço de limpeza durante a estadia. A taxa de limpeza é opcional e poderá ser cobrada no check-out;</li>
               <li>Não oferecemos kit para uso da lareira (poderá ser comprado no condomínio ou na região);</li>
-              <li>Lençóis, fronhas e toalhas (podem ser levados ou adquiridos no condomínio ou na região).</li>
+              <li>Lençóis, fronhas e toalhas (podem ser levados ou comprados no condomínio ou na região).</li>
             </ul>
           </li>
         </ul>

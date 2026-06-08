@@ -31,7 +31,7 @@ export default function Jalapao() {
           <br />
           <p className={styles.pergunta}>Existem taxas extras durante a expedição?</p>
           <p>
-            Sim, algumas atrações possuem cobranças específicas não inclusas nos pacotes. Na Lagoa do Japonês, a taxa extra para entrar na gruta e fazer a sessão de fotos foi de R$ 65,00 por pessoa. Já na Cachoeira da Formiga, a taxa ambiental cobrada foi de R$ 30,00.
+            Sim, algumas atrações possuem cobranças específicas não inclusas nos pacotes. Na Lagoa do Japonês, a taxa extra para entrar na gruta e fazer a sessão de fotos foi de R$ 65,00 por pessoa. Já na Cachoeira da Formiga, a taxa ambiental cobrada foi de R$ 30,00. Tem também a taxa de entrada no Parque do Jalapão de R$ 30,00 por pessoa. Para evitar ter que preencher informações na hora, o turista pode realizar o cadastro com antecedência acessando este <a href="https://turismoecologico.tur.br/mateiros/signin" target="_blank" rel="noopener noreferrer" className={styles.link}>link de registro</a>.
           </p>
         </section>
         <br />
